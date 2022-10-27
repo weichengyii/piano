@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="piano"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Program/C++/piano/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="piano">
+				<Option output="D:/Program/C++/piano/cmake-build-debug-mingw/piano.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/C++/piano/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 piano"/>
+					<CompileFile command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="piano/fast">
+				<Option output="D:/Program/C++/piano/cmake-build-debug-mingw/piano.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/C++/piano/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="d:\mingw\w64devkit\bin\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 piano/fast"/>
+					<CompileFile command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Program/C++/piano/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Program/C++/piano/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Mingw/w64devkit/bin/make.exe -f &quot;D:/Program/C++/piano/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Program/C++/piano/dwgs.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/dwgs.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/filter.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/filter.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/hammer.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/hammer.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/piano.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/piano.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/reverb.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/reverb.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/sndfile.cpp">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/sndfile.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/types.h">
+			<Option target="piano"/>
+		</Unit>
+		<Unit filename="D:/Program/C++/piano/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

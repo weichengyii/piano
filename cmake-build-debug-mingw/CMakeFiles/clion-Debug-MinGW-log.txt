@@ -1,0 +1,4 @@
+D:\JetBrains\apps\CLion\ch-0\223.7126.6\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/Mingw/w64devkit/bin/make.exe -DCMAKE_C_COMPILER=D:/Mingw/w64devkit/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/Mingw/w64devkit/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Program\C++\piano -B D:\Program\C++\piano\cmake-build-debug-mingw
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Program/C++/piano/cmake-build-debug-mingw

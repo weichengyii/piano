@@ -1,0 +1,3 @@
+D:/Program/C++/piano/cmake-build-debug-mingw/CMakeFiles/piano.dir
+D:/Program/C++/piano/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/Program/C++/piano/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
