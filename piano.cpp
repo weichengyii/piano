@@ -87,8 +87,6 @@ Piano::Piano(int note, double Fs, double v0, long samples) {
 
     printf("f = %g, r = %g mm, L = %g, T = %g, hammer = %g, Z = %g, K = %g, B = %g\n", f, 1000 * r, L, T, hp, Z, K, B);
 
-    double c1 = 0.25;
-    double c3 = 5.85;
     if (note < 31)
         nStrings = 1;
     else if (note < 41)
@@ -99,7 +97,7 @@ Piano::Piano(int note, double Fs, double v0, long samples) {
     double c1b = 20.0;
     double c3b = 20.0;
     for (int k = 0; k < nStrings; k++) {
-        string[k] = new dwgs(f * TUNE[k], Fs, hp, c1, c3, B, Z, Zb + (nStrings - 1) * Z, Zh);
+        string[k] = new dwgs(f * TUNE[k], Fs, hp, B, Z, Zb + (nStrings - 1) * Z, Zh);
     }
 
     double a = -1.0 / 4.0;
@@ -128,18 +126,6 @@ void usage() {
 }
 
 int main() {
-//    if (argc != 4 && argc != 5) usage();
-//    double tTot = atof(argv[1]);
-//    int note = atoi(argv[2]);
-//    if (note < 21 || note > 108) usage();
-//    double v0 = atof(argv[3]);
-//    if (v0 < 0 || v0 > 10) usage();
-//    int bWavOutput;
-//    if (argc > 4 && !strcmp(argv[4], "-b"))
-//        bWavOutput = 0;
-//    else
-//        bWavOutput = 1;
-
     double tTot = 5.0;
     int note = 69;
     double v0 = 5.0;
@@ -152,13 +138,7 @@ int main() {
     PcmWriter *pcmWriter;
     pcmWriter = new PcmWriter((char *) "D:/a.out/piano/out1.wav", samples, Fs, 1);
 
-
     auto *piano = new Piano(note, (double) Fs, v0, samples);
-
-//    double buf[128];
-//    while (piano->go(buf, 128)) {
-//        std::printf("%f\n", buf[0]);
-//    }
 
     double buf[128];
     while (piano->go(buf, 128)) {

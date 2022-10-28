@@ -2,7 +2,7 @@
 #include <cmath>
 #include <cstdio>
 
-dwgs::dwgs(double f, double Fs, double inPos, double c1, double c3, double B, double Z, double Zb, double Zh) {
+dwgs::dwgs(double f, double Fs, double inPos, double B, double Z, double Zb, double Zh) {
     // delTot = 2n
     // n = L / dx = L / (a*dt) = L / (2Lf*dt) = 1/(2f*dt) = (1/dT)/2f = Fs/(2f)
     // delTot = 2 * n = Fs / f
@@ -19,6 +19,9 @@ dwgs::dwgs(double f, double Fs, double inPos, double c1, double c3, double B, do
             thirianDispersion(B, f, M, &(dispersion[m]));
     }
     double dispersionDelay = M * groupDelay(&(dispersion[0]), f, Fs);
+
+    double c1 = 0.25;
+    double c3 = 5.85;
     loss(f, c1, c3, &lowPass);
     double lowPassDelay = groupDelay(&lowPass, f, Fs);
 
@@ -36,37 +39,38 @@ dwgs::dwgs(double f, double Fs, double inPos, double c1, double c3, double B, do
            del1 + del1 + del2 + del3 + dispersionDelay + lowPassDelay + tuningDelay,
            delTot, del1, del1, del2, del3, dispersionDelay, lowPassDelay, tuningDelay, D);
 
-    d[0] = new dwg(Z, del1, del1, 0, this);
-    d[1] = new dwg(Z, del2, del3, 1, this);
-    d[2] = new dwg(Zb, 0, 0, 0, this);
-    d[3] = new dwg(Zh, 0, 0, 0, this);
+    leftString = new dwg(Z, del1, del1, 0, this);
+    rightString = new dwg(Z, del2, del3, 1, this);
+    bridge = new dwg(Zb, 0, 0, 0, this);
+    hammer = new dwg(Zh, 0, 0, 0, this);
 
-    d[0]->connectRight(d[1]->l);
-    d[1]->connectLeft(d[0]->r);
-    d[1]->connectRight(d[2]->l);
-    d[2]->connectLeft(d[1]->r);
+    leftString->connectRight(rightString->l);
+    rightString->connectLeft(leftString->r);
+    rightString->connectRight(bridge->l);
+    bridge->connectLeft(rightString->r);
 
-    d[0]->connectRight(d[3]->l);
-    d[1]->connectLeft(d[3]->l);
-    d[3]->connectLeft(d[0]->r);
-    d[3]->connectLeft(d[1]->l);
+    leftString->connectRight(hammer->l);
+    rightString->connectLeft(hammer->l);
+    hammer->connectLeft(leftString->r);
+    hammer->connectLeft(rightString->l);
 
-    d[0]->init();
-    d[1]->init();
-    d[2]->init();
-    d[3]->init();
+    leftString->init();
+    rightString->init();
+    bridge->init();
+    hammer->init();
 }
 
 dwgs::~dwgs() {
-    for (auto &k: d) {
-        delete k;
-    }
+    delete leftString;
+    delete rightString;
+    delete bridge;
+    delete hammer;
 }
 
 dwgNode::dwgNode(double z) {
     a[0] = 0;
     a[1] = 0;
-    this->z = z;
+    this->Z = z;
     this->load = 0;
 }
 
@@ -74,10 +78,10 @@ dwg::dwg(double z, int del1, int del2, int commute, dwgs *parent) {
     this->parent = parent;
 
     if (del1 > 1) {
-        init_delay(&(d[0]), del1 - 1);
+        init_delay(&(delayLine[0]), del1 - 1);
     }
     if (del2 > 1) {
-        init_delay(&(d[1]), del2 - 1);
+        init_delay(&(delayLine[1]), del2 - 1);
     }
 
     this->del1 = del1;
@@ -92,22 +96,22 @@ dwg::dwg(double z, int del1, int del2, int commute, dwgs *parent) {
 void dwg::init() {
     double zTot;
 
-    zTot = l->z;
+    zTot = l->Z;
     for (int k = 0; k < nl; k++) {
-        zTot += cl[k]->z;
+        zTot += cl[k]->Z;
     }
-    alphaThisL = 2.0 * l->z / zTot;
+    alphaThisL = 2.0 * l->Z / zTot;
     for (int k = 0; k < nl; k++) {
-        alphaL[k] = 2.0 * cl[k]->z / zTot;
+        alphaL[k] = 2.0 * cl[k]->Z / zTot;
     }
 
-    zTot = r->z;
+    zTot = r->Z;
     for (int k = 0; k < nr; k++) {
-        zTot += cr[k]->z;
+        zTot += cr[k]->Z;
     }
-    alphaThisR = 2.0 * r->z / zTot;
+    alphaThisR = 2.0 * r->Z / zTot;
     for (int k = 0; k < nr; k++) {
-        alphaR[k] = 2.0 * cr[k]->z / zTot;
+        alphaR[k] = 2.0 * cr[k]->Z / zTot;
     }
 
 }
@@ -140,13 +144,13 @@ void dwg::doDelay() {
     if (del1 == 1)
         dar = r->a[0];
     else
-        dar = delay(r->a[0], &(d[0]));
+        dar = delay(r->a[0], &(delayLine[0]));
 
     double dal;
     if (del2 == 1)
         dal = l->a[1];
     else
-        dal = delay(l->a[1], &(d[1]));
+        dal = delay(l->a[1], &(delayLine[1]));
 
     l->a[0] = dar;
     r->a[1] = dal;
@@ -194,28 +198,29 @@ void dwg::update() const {
 }
 
 
-double dwgs::input_velocity() {
-    return d[1]->l->a[0] + d[0]->r->a[1];
+double dwgs::input_velocity() const {
+    return rightString->l->a[0] + leftString->r->a[1];
 }
 
-double dwgs::go_hammer(double load) {
-    d[3]->l->load = load;
-    for (int k = 0; k < 2; k++) {
-        d[k]->doDelay();
-    }
+double dwgs::go_hammer(double load) const {
+    hammer->l->load = load;
 
-    return d[1]->r->a[1];
+    leftString->doDelay();
+    rightString->doDelay();
+
+    return rightString->r->a[1];
 }
 
-double dwgs::go_soundboard(double load) {
-    d[2]->l->load = load;
-    for (int k = 0; k < 3; k++) {
-        d[k]->doLoad();
-    }
+double dwgs::go_soundboard(double load) const {
+    bridge->l->load = load;
 
-    for (int k = 0; k < 3; k++) {
-        d[k]->update();
-    }
+    leftString->doLoad();
+    rightString->doLoad();
+    bridge->doLoad();
 
-    return d[2]->l->a[1];
+    leftString->update();
+    rightString->update();
+    bridge->update();
+
+    return bridge->l->a[1];
 }

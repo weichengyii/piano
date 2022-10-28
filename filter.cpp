@@ -196,7 +196,7 @@ void thirian(double D, int N, Filter *c) {
     memset(c->y, 0, (N + 1) * sizeof(double));
 
     for (int k = 0; k <= N; k++) {
-        double ak = (double) choose((long) N, (long) k);
+        auto ak = (double) choose((long) N, (long) k);
         if (k % 2 == 1)
             ak = -ak;
         for (int n = 0; n <= N; n++) {

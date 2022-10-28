@@ -7,7 +7,7 @@ class dwgNode {
 public:
     explicit dwgNode(double z);
 
-    double z;
+    double Z;
     double load;
     double a[2]{};
 };
@@ -51,29 +51,30 @@ public:
     double alphaL[2]{};
     double alphaR[2]{};
 
-    Delay d[2]{};
+    Delay delayLine[2]{};
     dwgs *parent;
     int commute;
 };
 
 class dwgs {
 public:
-    dwgs(double f, double Fs, double inPos, double c1, double c3, double B, double Z, double Zb, double Zh);
+    dwgs(double f, double Fs, double inPos, double B, double Z, double Zb, double Zh);
 
     ~dwgs();
 
-    double input_velocity();
+    [[nodiscard]] double input_velocity() const;
 
-    double go_hammer(double load);
+    [[nodiscard]] double go_hammer(double load) const;
 
-    double go_soundboard(double load);
+    [[nodiscard]] double go_soundboard(double load) const;
 
     Filter dispersion[4]{};
     Filter lowPass{};
     Filter fracDelay{};
 
     int M;
-    dwg *d[4]{};
+    dwg *leftString, *rightString;
+    dwg *bridge, *hammer;
 };
 
 #endif

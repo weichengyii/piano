@@ -8,13 +8,6 @@ struct Filter {
     int n;
 };
 
-//struct Delay {
-//    int d1;
-//    int size;
-//    int cursor;
-//    double *x;
-//    double *y;
-//};
 struct Delay {
     int size;
     int cursor;
