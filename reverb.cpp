@@ -7,7 +7,7 @@ Reverb::Reverb(double c1, double c3, double a, double mix, double Fs) {
     double aa[8] = {a, 1+a, a, a, a, a, a, a};
 
     for (int k = 0; k < 8; k++) {
-        init_delay(&(d[k]), lengths[k]);
+        d[k].init(lengths[k]);
         o[k] = 0;
         b[k] = 1;
         c[k] = (k % 2 == 0) ? 1.0 / 8.0 : -1.0 / 8.0;
@@ -31,7 +31,7 @@ double Reverb::reverb(double in) {
 
     double out = 0;
     for (int j = 0; j < 8; j++) {
-        o[j] = filter(delay(i[j], &(d[j])), &(decay[j]));
+        o[j] = filter(d[j].delay(i[j]), &(decay[j]));
         out += c[j] * o[j] * .5;
     }
 

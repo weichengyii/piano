@@ -275,75 +275,25 @@ double filter(double in, Filter *c) {
 }
 
 
-//void init_delay(Delay *c, int di) {
-//    // turn size into a mask for quick modding
-//    c->size = 2 * di;
-//    int p = 0;
-//    while (c->size) {
-//        c->size /= 2;
-//        p++;
-//    }
-//    c->size = 1;
-//    while (p) {
-//        c->size *= 2;
-//        p--;
-//    }
-//
-//    c->x = new double[c->size];
-//    c->y = new double[c->size];
-//    memset(c->x, 0, c->size * sizeof(double));
-//    memset(c->y, 0, c->size * sizeof(double));
-//
-//    c->cursor = 0;
-//    c->d1 = c->size - di;
-//}
+double Delay::delay(double in) {
+    x[cursor] = in;
+    cursor = (cursor + 1) % size;
+    return x[cursor];
+}
 
-//double probe_delay(Delay *c, int pos) {
-//    return c->y[(c->cursor - pos + c->size) % (c->size)];
-//}
-//
-//void destroy_delay(Delay *c) {
-//    delete c->x;
-//    delete c->y;
-//}
-
-//double delay(double in, Delay *c) {
-//    int cursor = c->cursor;
-//    int d1 = c->d1;
-//    double y0 = c->x[d1];
-//    c->y[cursor] = y0;
-//    c->x[cursor] = in;
-//    c->d1++;
-////    c->d1 &= c->mask;
-//    if (c->d1 == c->size) c->d1 = 0;
-//    c->cursor++;
-////    c->cursor &= c->mask;
-//    if (c->cursor == c->size) c->cursor = 0;
-//
-//    return y0;
-//}
-
-void init_delay(Delay *c, int di) {
+void Delay::init(int di) {
     // turn size into a mask for quick modding
-    c->size = di + 1;
+    size = di + 1;
 
-    c->x = new double[c->size];
-    memset(c->x, 0, c->size * sizeof(double));
-    c->cursor = 0;
+    x = new double[size];
+    memset(x, 0, size * sizeof(double));
+    cursor = 0;
 }
 
-double probe_delay(Delay *c, int pos) {
-    return c->x[(c->cursor - pos + c->size) % (c->size)];
+double Delay::probe(int pos) const {
+    return x[(cursor - pos + size) % (size)];
 }
 
-void destroy_delay(Delay *c) {
-    delete c->x;
-}
-
-double delay(double in, Delay *c) {
-    c->x[c->cursor] = in;
-//    c->cursor++;
-//    if (c->cursor == c->size) c->cursor = 0;
-    c->cursor = (c->cursor + 1) % c->size;
-    return c->x[c->cursor];
+void Delay::destroy() const {
+    delete x;
 }

@@ -4,36 +4,16 @@
 CMakeFiles/piano.dir/dwgs.cpp.obj: D:/Program/C++/piano/dwgs.cpp \
   D:/Program/C++/piano/dwgs.h \
   D:/Program/C++/piano/filter.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cmath \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_algobase.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/pstl/pstl_config.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/type_traits.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/math.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/crtdefs.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_abs.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdlib.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/limits.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdlib.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/malloc.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/errno.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/specfun.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_algobase.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functexcept.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_defines.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/type_traits.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/numeric_traits.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_pair.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/type_traits \
@@ -54,22 +34,33 @@ CMakeFiles/piano.dir/dwgs.cpp.obj: D:/Program/C++/piano/dwgs.cpp \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_construct.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/debug/debug.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/predefined_ops.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/limits \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/gamma.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/special_function_util.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/bessel_function.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/beta_function.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/ell_integral.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/exp_integral.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/hypergeometric.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/legendre_function.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_hermite.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_laguerre.tcc \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/new_allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/memoryfwd.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/alloc_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/alloc_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/initializer_list \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functional_hash.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/refwrap.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/invoke.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_function.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward/binders.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/range_access.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdio \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdio.h \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/swprintf.inl \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h
@@ -286,20 +277,112 @@ CMakeFiles/piano.dir/piano.cpp.obj: D:/Program/C++/piano/piano.cpp \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/swprintf.inl \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ostream \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ios \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iosfwd \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stringfwd.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/memoryfwd.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/postypes.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cwchar \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/wchar.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/exception \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_ptr.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stddef.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/nested_exception.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/char_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdint \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdint.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/localefwd.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/clocale \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/locale.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cctype \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/ctype.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ios_base.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/atomicity.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/types.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/process.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_startup.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/signal.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_signal.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/time.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/timeb.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_timeval.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_time.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_compat.h \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_unistd.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/new_allocator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream_insert.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_forced.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_function.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward/binders.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/refwrap.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/invoke.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/range_access.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/initializer_list \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_string.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/alloc_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/alloc_traits.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string_view \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functional_hash.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ranges_base.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/max_size_type.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/numbers \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/string_view.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/string_conversions.h \
   D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdlib \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cerrno \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/charconv.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_string.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/system_error \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdexcept \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/streambuf \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/streambuf.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_facets.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cwctype \
+  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/wctype.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/streambuf_iterator.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_facets.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ctime \
   D:/Program/C++/piano/types.h \
   D:/Program/C++/piano/piano.h \
   D:/Program/C++/piano/filter.h \
   D:/Program/C++/piano/dwgs.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h \
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc \
   D:/Program/C++/piano/reverb.h \
   D:/Program/C++/piano/hammer.h \
   D:/Program/C++/piano/sndfile.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/sndfile.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdint.h \
-  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stddef.h \
-  D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/types.h
+  D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/sndfile.h
 
 CMakeFiles/piano.dir/reverb.cpp.obj: D:/Program/C++/piano/reverb.cpp \
   D:/Program/C++/piano/filter.h \
@@ -327,105 +410,83 @@ CMakeFiles/piano.dir/sndfile.cpp.obj: D:/Program/C++/piano/sndfile.cpp \
   D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/types.h
 
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_construct.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
-D:/Program/C++/piano/dwgs.cpp:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/alloc_traits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_construct.h:
 
 D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
+D:/Program/C++/piano/dwgs.cpp:
+
 D:/Program/C++/piano/filter.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stringfwd.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functional_hash.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/debug/assertions.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdio.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ptr_traits.h:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_abs.h:
-
 D:/Program/C++/piano/dwgs.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/concepts:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cmath:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
-
-D:/Program/C++/piano/reverb.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/limits.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdlib.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/pstl/pstl_config.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/beta_function.tcc:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/predefined_ops.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/type_traits.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/math.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/crtdefs.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/string_s.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/gamma.tcc:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_defines.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/vadefs.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/special_function_util.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/numeric_traits.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/type_traits:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_funcs.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functexcept.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdlib.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/malloc.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/errno.h:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/legendre_function.tcc:
-
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/specfun.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/compare:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_algobase.h:
 
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/pstl/pstl_config.h:
+
+D:/Program/C++/piano/reverb.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/limits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdint.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functexcept.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_defines.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_function.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/charconv.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/modified_bessel_func.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/predefined_ops.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/type_traits.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_timeval.h:
+
+D:/Program/C++/piano/filter.cpp:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/numeric_traits.h:
+
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/riemann_zeta.tcc:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_pair.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/type_traits:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/new:
 
@@ -435,35 +496,129 @@ D:/Program/C++/piano/reverb.cpp:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/utility.h:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_types.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/new_allocator.h:
 
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/concepts:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_types.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/iterator_concepts.h:
 
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ranges_cmp.h:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/ell_integral.tcc:
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_funcs.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/concept_check.h:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/debug/assertions.h:
-
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/refwrap.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_facets.tcc:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception.h:
 
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocator.h:
+
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/debug/debug.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward/binders.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/memoryfwd.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/alloc_traits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/initializer_list:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/invoke.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/range_access.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdio:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/string_conversions.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/vadefs.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/swprintf.inl:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cmath:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/math.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/crtdefs.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_abs.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdlib.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdlib.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/malloc.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/errno.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/specfun.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/limits:
 
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string_view:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/gamma.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/special_function_util.h:
+
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/bessel_function.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/beta_function.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/streambuf.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/ell_integral.tcc:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/exp_integral.tcc:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/hypergeometric.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/legendre_function.tcc:
 
 D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/types.h:
 
@@ -471,15 +626,7 @@ D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_hermit
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tr1/poly_laguerre.tcc:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdio:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdio.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/swprintf.inl:
-
-D:/Program/C++/piano/filter.cpp:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstring:
 
@@ -493,20 +640,140 @@ D:/Program/C++/piano/hammer.h:
 
 D:/Program/C++/piano/piano.cpp:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdlib:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream:
 
-D:/Program/C++/piano/piano.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ostream:
 
-D:/Program/C++/piano/sndfile.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ios:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/sndfile.h:
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/locale.h:
 
-D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iosfwd:
 
-D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stdint.h:
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/postypes.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cwchar:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/wchar.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/exception:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_ptr.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_init_exception.h:
 
 D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h:
 
 D:/Mingw/w64devkit/x86_64-w64-mingw32/include/stddef.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/nested_exception.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/char_traits.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdint:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/localefwd.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/clocale:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cctype:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/ctype.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ios_base.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/atomicity.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/process.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/signal.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_signal.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/time.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sys/timeb.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_time.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_compat.h:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/pthread_unistd.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream_insert.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_facets.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_forced.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_string.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ranges_base.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/max_size_type.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/numbers:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/string_view.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdlib:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cerrno:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_string.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/locale_classes.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/system_error:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdexcept:
+
+D:/Program/C++/piano/piano.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/streambuf:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cwctype:
+
+D:/Mingw/w64devkit/x86_64-w64-mingw32/include/wctype.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/streambuf_iterator.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ctime:
+
+D:/Program/C++/piano/sndfile.h:
+
+D:/Mingw/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/sndfile.h:
 
 D:/Program/C++/piano/sndfile.cpp:

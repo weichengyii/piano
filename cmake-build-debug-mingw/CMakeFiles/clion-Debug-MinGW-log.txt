@@ -1,4 +1,16 @@
-D:\JetBrains\apps\CLion\ch-0\223.7126.6\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/Mingw/w64devkit/bin/make.exe -DCMAKE_C_COMPILER=D:/Mingw/w64devkit/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/Mingw/w64devkit/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Program\C++\piano -B D:\Program\C++\piano\cmake-build-debug-mingw
+D:\JetBrains\apps\CLion\ch-0\223.7255.15\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/Mingw/w64devkit/bin/make.exe -DCMAKE_C_COMPILER=D:/Mingw/w64devkit/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/Mingw/w64devkit/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Program\C++\piano -B D:\Program\C++\piano\cmake-build-debug-mingw
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Mingw/w64devkit/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/Mingw/w64devkit/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: D:/Program/C++/piano/cmake-build-debug-mingw

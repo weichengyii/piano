@@ -12,6 +12,11 @@ struct Delay {
     int size;
     int cursor;
     double *x;
+
+    void init(int di);
+    double delay(double in);
+    [[nodiscard]] double probe(int pos) const;
+    void destroy() const;
 };
 
 enum biqaudType {
@@ -23,7 +28,7 @@ enum biqaudType {
 
 long choose(long n, long k);
 
-double probe_delay(Delay *c, int pos);
+//double probe_delay(Delay *c, int pos);
 
 double groupDelay(Filter *c, double f, double Fs);
 
@@ -45,11 +50,6 @@ void destroy_filter(Filter *c);
 
 double filter(double in, Filter *c);
 
-void init_delay(Delay *c, int di);
-
-void destroy_delay(Delay *c);
-
-double delay(double in, Delay *c);
 
 
 #endif

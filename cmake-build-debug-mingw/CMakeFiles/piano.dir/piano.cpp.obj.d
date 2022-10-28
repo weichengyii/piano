@@ -68,14 +68,106 @@ CMakeFiles/piano.dir/piano.cpp.obj: D:\Program\C++\piano\piano.cpp \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_off_t.h \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\swprintf.inl \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\sec_api\stdio_s.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdlib \
- D:\Program\C++\piano\types.h D:\Program\C++\piano\piano.h \
- D:\Program\C++\piano\filter.h D:\Program\C++\piano\dwgs.h \
- D:\Program\C++\piano\reverb.h D:\Program\C++\piano\hammer.h \
- D:\Program\C++\piano\sndfile.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\sndfile.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdint.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\stdint.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\iostream \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ostream \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ios \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\iosfwd \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stringfwd.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\memoryfwd.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\postypes.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cwchar \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\wchar.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_stat64.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\sec_api\wchar_s.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\exception \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\exception_ptr.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cxxabi_init_exception.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stddef.h \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\stddef.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\sys\types.h
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\typeinfo \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\hash_bytes.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\nested_exception.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\char_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdint \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdint.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\stdint.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\localefwd.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++locale.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\clocale \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\locale.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cctype \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\ctype.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ios_base.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\atomicity.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\gthr.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\gthr-default.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\pthread.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\sys\types.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\process.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\corecrt_startup.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\signal.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\pthread_signal.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\time.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\sys\timeb.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\sec_api\sys\timeb_s.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\_timeval.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\pthread_time.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\pthread_compat.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\pthread_unistd.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\atomic_word.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_classes.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\string \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\new_allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ostream_insert.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cxxabi_forced.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_function.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\backward\binders.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\refwrap.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\invoke.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\range_access.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\initializer_list \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_string.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\alloc_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\alloc_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\string_view \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\functional_hash.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ranges_base.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\max_size_type.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\numbers \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\string_view.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\string_conversions.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdlib \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cerrno \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\charconv.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_string.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_classes.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\system_error \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\error_constants.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\stdexcept \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\streambuf \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\streambuf.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_ios.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cwctype \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\wctype.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\ctype_base.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\streambuf_iterator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\ctype_inline.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_ios.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ostream.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\istream \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\istream.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ctime \
+ D:\Program\C++\piano\types.h D:\Program\C++\piano\piano.h \
+ D:\Program\C++\piano\filter.h D:\Program\C++\piano\dwgs.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\vector \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_uninitialized.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_vector.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_bvector.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\vector.tcc \
+ D:\Program\C++\piano\reverb.h D:\Program\C++\piano\hammer.h \
+ D:\Program\C++\piano\sndfile.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\sndfile.h

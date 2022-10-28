@@ -1,5 +1,4 @@
 #include "dwgs.h"
-#include <cmath>
 #include <cstdio>
 
 dwgs::dwgs(double f, double Fs, double inPos, double B, double Z, double Zb, double Zh) {
@@ -44,15 +43,15 @@ dwgs::dwgs(double f, double Fs, double inPos, double B, double Z, double Zb, dou
     dwgBridge = new dwg(Zb, 0, 0, 0, this);
     dwgHammer = new dwg(Zh, 0, 0, 0, this);
 
-    dwgLeftString->connectRight(dwgRightString->nodeL);
-    dwgRightString->connectLeft(dwgLeftString->nodeR);
-    dwgRightString->connectRight(dwgBridge->nodeL);
-    dwgBridge->connectLeft(dwgRightString->nodeR);
+    dwgLeftString->connectRight(dwgRightString->lNode);
+    dwgRightString->connectLeft(dwgLeftString->rNode);
+    dwgRightString->connectRight(dwgBridge->lNode);
+    dwgBridge->connectLeft(dwgRightString->rNode);
 
-    dwgLeftString->connectRight(dwgHammer->nodeL);
-    dwgRightString->connectLeft(dwgHammer->nodeL);
-    dwgHammer->connectLeft(dwgLeftString->nodeR);
-    dwgHammer->connectLeft(dwgRightString->nodeL);
+    dwgLeftString->connectRight(dwgHammer->lNode);
+    dwgRightString->connectLeft(dwgHammer->lNode);
+    dwgHammer->connectLeft(dwgLeftString->rNode);
+    dwgHammer->connectLeft(dwgRightString->lNode);
 
     dwgLeftString->init();
     dwgRightString->init();
@@ -70,149 +69,129 @@ dwgs::~dwgs() {
 dwgNode::dwgNode(double z) {
     a[0] = 0;
     a[1] = 0;
-    this->Z = z;
+    this->z = z;
     this->load = 0;
 }
 
-dwg::dwg(double z, int del1, int del2, int commute, dwgs *parent) {
+dwg::dwg(double Z, int del1, int del2, int commute, dwgs *parent) {
     this->parent = parent;
 
     if (del1 > 1) {
-        init_delay(&(delayLine[0]), del1 - 1);
+        lower.init(del1 - 1);
     }
     if (del2 > 1) {
-        init_delay(&(delayLine[1]), del2 - 1);
+        upper.init(del2 - 1);
     }
 
-    this->del1 = del1;
-    this->del2 = del2;
     nl = 0;
     nr = 0;
-    nodeL = new dwgNode(z);
-    nodeR = new dwgNode(z);
+    lNode = new dwgNode(Z);
+    rNode = new dwgNode(Z);
     this->commute = commute;
 }
 
-void dwg::init() {
+void dwg::init() { // init alpha
     double zTot;
 
-    zTot = nodeL->Z;
+    zTot = lNode->z;
     for (int k = 0; k < nl; k++) {
-        zTot += cl[k]->Z;
+        zTot += cl[k]->z;
     }
-    alphaThisL = 2.0 * nodeL->Z / zTot;
+    alphaThisL = 2.0 * lNode->z / zTot;
     for (int k = 0; k < nl; k++) {
-        alphaL[k] = 2.0 * cl[k]->Z / zTot;
+        alphaL[k] = 2.0 * cl[k]->z / zTot;
     }
 
-    zTot = nodeR->Z;
+    zTot = rNode->z;
     for (int k = 0; k < nr; k++) {
-        zTot += cr[k]->Z;
+        zTot += cr[k]->z;
     }
-    alphaThisR = 2.0 * nodeR->Z / zTot;
+    alphaThisR = 2.0 * rNode->z / zTot;
     for (int k = 0; k < nr; k++) {
-        alphaR[k] = 2.0 * cr[k]->Z / zTot;
+        alphaR[k] = 2.0 * cr[k]->z / zTot;
     }
 
 }
 
 dwg::~dwg() {
-    delete nodeL;
-    delete nodeR;
-}
-
-void dwg::connectLeft(dwgNode *node, int polarity) {
-    cl[nl] = node;
-    pl[nl++] = polarity;
-}
-
-void dwg::connectRight(dwgNode *node, int polarity) {
-    cr[nr] = node;
-    pr[nr++] = polarity;
+    delete lNode;
+    delete rNode;
 }
 
 void dwg::connectLeft(dwgNode *node) {
-    connectLeft(node, 0);
+    cl[nl] = node;
+    nl++;
 }
 
 void dwg::connectRight(dwgNode *node) {
-    connectRight(node, 0);
+    cr[nr] = node;
+    nr++;
 }
 
 void dwg::doDelay() {
-    double dar;
-    if (del1 == 1)
-        dar = nodeR->a[0];
-    else
-        dar = delay(nodeR->a[0], &(delayLine[0]));
+    double dar = lower.delay(rNode->a[0]);
 
-    double dal;
-    if (del2 == 1)
-        dal = nodeL->a[1];
-    else
-        dal = delay(nodeL->a[1], &(delayLine[1]));
+    double dal = upper.delay(lNode->a[1]);
 
-    nodeL->a[0] = dar;
-    nodeR->a[1] = dal;
+    lNode->a[0] = dar;
+    rNode->a[1] = dal;
 }
 
 void dwg::doLoad() {
     if (nl == 0)
-        loadL = 0;
+        lLoad = 0;
     else {
-        loadL = alphaThisL * nodeL->a[0];
+        lLoad = alphaThisL * lNode->a[0];
         for (int k = 0; k < nl; k++) {
-            int polarity = pl[k] ? 0 : 1;
-            loadL += cl[k]->load;
-            loadL += alphaL[k] * cl[k]->a[polarity];
+            lLoad += cl[k]->load;
+            lLoad += alphaL[k] * cl[k]->a[1];
         }
     }
 
     if (nr == 0)
-        loadR = 0;
+        rLoad = 0;
     else {
-        loadR = alphaThisR * nodeR->a[1];
+        rLoad = alphaThisR * rNode->a[1];
         for (int k = 0; k < nr; k++) {
-            int polarity = pr[k] ? 1 : 0;
-            loadR += cr[k]->load;
-            loadR += alphaR[k] * cr[k]->a[polarity];
+            rLoad += cr[k]->load;
+            rLoad += alphaR[k] * cr[k]->a[0];
         }
     }
 }
 
 void dwg::update() const {
-    double a = (loadL - nodeL->a[0]);
+    double a = lLoad - lNode->a[0];
     if (commute) {
         for (int m = 0; m < parent->M; m++) {
             a = filter(a, &(parent->dispersion[m]));
         }
     }
-    nodeL->a[1] = a;
+    lNode->a[1] = a;
 
-    a = (loadR - nodeR->a[1]);
+    a = rLoad - rNode->a[1];
     if (commute) {
         a = filter(a, &(parent->lowPass));
         a = filter(a, &(parent->fracDelay));
     }
-    nodeR->a[0] = a;
+    rNode->a[0] = a;
 }
 
 
 double dwgs::input_velocity() const {
-    return dwgRightString->nodeL->a[0] + dwgLeftString->nodeR->a[1];
+    return dwgRightString->lNode->a[0] + dwgLeftString->rNode->a[1];
 }
 
-double dwgs::go_hammer(double load) const {
-    dwgHammer->nodeL->load = load;
+double dwgs::go_hammer(double v) const {
+    dwgHammer->lNode->load = v;
 
     dwgLeftString->doDelay();
     dwgRightString->doDelay();
 
-    return dwgRightString->nodeR->a[1];
+    return dwgRightString->rNode->a[1];
 }
 
 double dwgs::go_soundboard(double load) const {
-    dwgBridge->nodeL->load = load;
+    dwgBridge->lNode->load = load;
 
     dwgLeftString->doLoad();
     dwgRightString->doLoad();
@@ -222,5 +201,5 @@ double dwgs::go_soundboard(double load) const {
     dwgRightString->update();
     dwgBridge->update();
 
-    return dwgBridge->nodeL->a[1];
+    return dwgBridge->lNode->a[1];
 }

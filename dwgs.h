@@ -2,21 +2,24 @@
 #define DWGS_H
 
 #include "filter.h"
+#include <vector>
 
 class dwgNode {
 public:
     explicit dwgNode(double z);
 
-    double Z;
+    double z;
     double load;
     double a[2]{};
+
+    double alpha{};
 };
 
 class dwgs;
 
 class dwg {
 public:
-    dwg(double z, int del1, int del2, int commute, dwgs *parent);
+    dwg(double Z, int del1, int del2, int commute, dwgs *parent);
 
     ~dwg();
 
@@ -32,26 +35,19 @@ public:
 
     void connectRight(dwgNode *node);
 
-    void connectLeft(dwgNode *node, int polarity);
-
-    void connectRight(dwgNode *node, int polarity);
-
-    int del1;
-    int del2;
     int nl;
     int nr;
-    int pl[2]{};
-    int pr[2]{};
     dwgNode *cl[2]{};
     dwgNode *cr[2]{};
-    dwgNode *nodeL, *nodeR;
-    double loadL{}, loadR{};
+    dwgNode *lNode, *rNode;
+    double lLoad{}, rLoad{};
     double alphaThisL{};
     double alphaThisR{};
     double alphaL[2]{};
     double alphaR[2]{};
 
-    Delay delayLine[2]{};
+    Delay lower{};
+    Delay upper{};
     dwgs *parent;
     int commute;
 };
@@ -64,7 +60,7 @@ public:
 
     [[nodiscard]] double input_velocity() const;
 
-    [[nodiscard]] double go_hammer(double load) const;
+    [[nodiscard]] double go_hammer(double v) const;
 
     [[nodiscard]] double go_soundboard(double load) const;
 

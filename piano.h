@@ -24,10 +24,8 @@ public:
 
     static double freqTable[NUM_NOTES];
 
-    double v0;
     long samples;
     long sample;
-    double Fs;
     double t;
     double dt;
     double Z;

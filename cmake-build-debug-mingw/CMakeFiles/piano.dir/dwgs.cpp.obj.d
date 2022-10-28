@@ -1,35 +1,15 @@
 CMakeFiles/piano.dir/dwgs.cpp.obj: D:\Program\C++\piano\dwgs.cpp \
  D:\Program\C++\piano\dwgs.h D:\Program\C++\piano\filter.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cmath \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\vector \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_algobase.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++config.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\os_defines.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\cpu_defines.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\pstl\pstl_config.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cpp_type_traits.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\type_traits.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\math.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\crtdefs.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\corecrt.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_mac.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_secapi.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\vadefs.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\sdks/_mingw_ddk.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\std_abs.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\stdlib.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\corecrt_wstdlib.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include-fixed\limits.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include-fixed\syslimits.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\limits.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\sec_api\stdlib_s.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\stdlib.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\malloc.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\mm_malloc.h \
- d:\mingw\w64devkit\x86_64-w64-mingw32\include\errno.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\specfun.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_algobase.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\functexcept.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\exception_defines.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cpp_type_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\type_traits.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\numeric_traits.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_pair.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\type_traits \
@@ -50,22 +30,33 @@ CMakeFiles/piano.dir/dwgs.cpp.obj: D:\Program\C++\piano\dwgs.cpp \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_construct.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\debug\debug.h \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\predefined_ops.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\limits \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\gamma.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\special_function_util.h \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\bessel_function.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\beta_function.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\ell_integral.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\exp_integral.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\hypergeometric.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\legendre_function.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\modified_bessel_func.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\poly_hermite.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\poly_laguerre.tcc \
- d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\tr1\riemann_zeta.tcc \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\new_allocator.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\memoryfwd.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_uninitialized.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\alloc_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\alloc_traits.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_vector.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\initializer_list \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_bvector.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\functional_hash.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\hash_bytes.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\refwrap.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\invoke.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_function.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\backward\binders.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\range_access.h \
+ d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\vector.tcc \
  d:\mingw\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdio \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\stdio.h \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\corecrt_stdio_config.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\corecrt.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_mac.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_secapi.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\vadefs.h \
+ d:\mingw\w64devkit\x86_64-w64-mingw32\include\sdks/_mingw_ddk.h \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\_mingw_off_t.h \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\swprintf.inl \
  d:\mingw\w64devkit\x86_64-w64-mingw32\include\sec_api\stdio_s.h
