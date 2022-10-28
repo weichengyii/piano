@@ -44,7 +44,7 @@ public:
     int pr[2]{};
     dwgNode *cl[2]{};
     dwgNode *cr[2]{};
-    dwgNode *l, *r;
+    dwgNode *nodeL, *nodeR;
     double loadL{}, loadR{};
     double alphaThisL{};
     double alphaThisR{};
@@ -73,8 +73,8 @@ public:
     Filter fracDelay{};
 
     int M;
-    dwg *leftString, *rightString;
-    dwg *bridge, *hammer;
+    dwg *dwgLeftString, *dwgRightString;
+    dwg *dwgBridge, *dwgHammer;
 };
 
 #endif

@@ -85,7 +85,7 @@ Piano::Piano(int note, double Fs, double v0, long samples) {
     double B = pow(M_PI, 3) * E * pow(rCore, 4) / (4.0 * L * L * T);
     double hp = 1.0 / 7.0;
 
-    printf("f = %g, r = %g mm, L = %g, T = %g, hammer = %g, Z = %g, K = %g, B = %g\n", f, 1000 * r, L, T, hp, Z, K, B);
+    printf("f = %g, nodeR = %g mm, L = %g, T = %g, dwgHammer = %g, Z = %g, K = %g, B = %g\n", f, 1000 * r, L, T, hp, Z, K, B);
 
     if (note < 31)
         nStrings = 1;
